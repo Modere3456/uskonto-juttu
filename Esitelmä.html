@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagrada Familia</title>	
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f6f0; /* Light Cream */
+}
+
+header {
+    background: #005fa3; /* Dark Blue */ 
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-family:Arial, sans-serif;
+    color:#005fa3;
+    margin: 0;
+    font-size: 2.5em;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: white; /* White */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #005fa3; /* Dark Blue */
+    font-family: serif;
+    border-bottom: 2px solid #005fa3; /* Dark Blue */
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-family: cursive;
+    color: #555;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #333333; /* Dark Gray */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    transition: transform 0.3s;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.additional-info {
+    display: none;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333333; /* Dark Gray */
+}
+
+.about-button, .back-button {
+    margin-top: 10px;
+    padding: 15px 30px; /* Padding for larger button */
+    background: linear-gradient(135deg, #0077cc, #009688); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Larger font size */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Make link behave like a button */
+    box-shadow: 0 4px 15px rgba(0, 119, 204, 0.5); /* Initial glow effect */
+}
+
+.about-button:hover, .back-button:hover {
+    background: linear-gradient(135deg, #005fa3, #0077cc); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 8px 25px rgba(0, 119, 204, 0.7); /* Enhanced glow effect on hover */
+}        .about-button, .back-button {
+    margin-top: 10px;
+    padding: 15px 30px; /* Padding for larger button */
+    background: linear-gradient(135deg, #0077cc, #005fa3); /* Gradient background */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 8px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 1.5em; /* Larger font size */
+    text-decoration: none; /* Remove underline for links */
+    display: inline-block; /* Make link behave like a button */
+    box-shadow: 0 4px 15px rgba(0, 119, 204, 0.5); /* Initial glow effect */
+}
+
+.about-button:hover, .back-button:hover {
+    background: linear-gradient(135deg, #005fa3, #0077cc); /* Darker gradient on hover */
+    transform: translateY(-2px); /* Slightly lift the button */
+    box-shadow: 0 8px 25px rgba(0, 119, 204, 0.7); /* Enhanced glow effect on hover */
+}
+    </style>
+    <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+ 
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    modalImg.alt = this.alt;
+    captionText.innerHTML = this.alt;
+}
+ 
+ 
+// When the user clicks on <span> (x), close the modal
+modal.onclick = function() {
+    img01.className += " out";
+    setTimeout(function() {
+       modal.style.display = "none";
+       img01.className = "modal-content";
+     }, 400);
+    
+ }    
+    
+        function toggleInfo(id) {
+            const info = document.getElementById(id);
+            if (info.style.display === "none" || info.style.display === "") {
+                info.style.display = "block";
+            } else {
+                info.style.display = "none";
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>Sagrada Família</h1>
+
+<section>
+<h2>Historia</h2>
+<p>Rakentamisen Aloitus: Sagrada Familia -katedraalin rakentaminen alkoi vuonna 1882. Alun perin suunnitelmat laati arkkitehti Francisco de Paula del Villar, mutta Antoni Gaudí otti projektin haltuunsa vuonna 1883 ja muutti sen suunnitelmia merkittävästi.Sagrada Familia on edelleen keskeneräinen, ja sen arvioidaan valmistuvan vuonna 2026. Rakennustyöt alkoivat vuonna 1882, ja vaikka suurin osa kirkosta on saatu valmiiksi, osa torneista ja sisätiloista on vielä työn alla.<p>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-imgix.headout.com%2Fmicrobrands-content-image%2Fimage%2F0cfef2762d8811e1937510140ed70027-Sagrada%2520Familia.jpg&f=1&nofb=1&ipt=7a476acc7541bb6000f43c2199321f67b2c330afe0fad1eb21155cece5166aa8" alt="Sagrada familia" width="200" height="300"
+</section>
+<section><h2>Suunnittelu</h2>
+<p>Gaudí ja Suunnittelu: Gaudí käytti luovaa ja innovatiivista lähestymistapaa, yhdistäen goottilaisia ja art nouveau -tyylejä. Hän halusi, että katedraali kuvastaisi luonnon muotoja ja kristillistä symboliikkaa.</p>
+<img src="https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn.theculturetrip.com%2Fwp-content%2Fuploads%2F2016%2F01%2F1024px-Gaud%25C3%25AD_1878.jpg&f=1&nofb=1&ipt=bc1c3fee43dd9440e30bda422d3870aaf6a5c5f4792c351c9239c2a955b0fa02" alt="Sagrada familia" width="200" height="300"></section>
+
+<section>
+<h2>Rakennustyöt ja haasteet</h2>
+<p>
+Rakennustyöt etenevät hitaasti rahoituksen puutteen vuoksi, ja Gaudí kuoli vuonna 1926 onnettomuudessa, jolloin basilika oli vielä keskeneräinen.
+Toisen maailmansodan aikana rakennustyöt keskeytyivät, ja osa Gaudín alkuperäisistä suunnitelmista tuhoutui.
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcatechese.catholique.fr%2Fwp-content%2Fuploads%2Fsites%2F15%2F2021%2F06%2FLOasis-20_Art-pour-dire-Dieu-scaled.jpg&f=1&nofb=1&ipt=26f509c073014c49f8167156f7bd6893a8940414c8fae0b92d1c19db383cee2e" alt="Sagrada familia" width="200" height="300">
+</p></section>
+
+<section>
+<h2>Erikoisuudets</h2>
+<p>Luonnon inspiroima arkkitehtuuri: Gaudí käytti luonnonmuotoja ja -rakenteita inspiraationa, mikä näkyy esimerkiksi pylväiden ja holvien muodoissa, jotka muistuttavat puita ja oksia.</p>
+<img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn-imgix.headout.com%2Fmircobrands-content%2Fimage%2F4a243817fc897a157df7588d775dfb5f-Sagrada%2520Familia%2520The%2520Main%2520Altar.jpg%3Fauto%3Dformat%26q%3D90%26crop%3Dfaces&f=1&nofb=1&ipt=de5d34d65216cb2bfa7a7e0c2a19db3b2e5679eb556f97d7b8ff5a17a6c16a98" alt="Sagrada familia" width="200" height="300"></section>
+
